@@ -1,0 +1,5 @@
+server:
+  port: ${BONUS_API_PORT:8081}
+spring:
+  application:
+    name: bonus_api

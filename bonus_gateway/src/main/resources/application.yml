@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: api-service
+          uri: ${BONUS_API_HOST:http://localhost:8081}
+          predicates:
+            - Path=/api/v1/**
+          filters:
+            - StripPrefix=2
+
+        - id: payment-service
+          uri: ${BONUS_PAYMENT_HOST:http://localhost:8082}
+          predicates:
+            - Path=/api/v1/payment/**
+          filters:
+            - StripPrefix=2
