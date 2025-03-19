@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bonus_referral
+  profiles:
+    include: >
+      db

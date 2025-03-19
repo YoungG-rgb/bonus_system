@@ -23,6 +23,7 @@
         <module>bonus_auth</module>
         <module>bonus_gamification</module>
         <module>bonus_analytics</module>
+        <module>bonus_referral</module>
     </modules>
 
     <properties>
